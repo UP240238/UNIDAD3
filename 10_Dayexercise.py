@@ -82,3 +82,14 @@ for i in range(101):
 countries_with_land = [country for country in countries if 'land' in country.lower()]
 
 print(countries_with_land)
+
+#2
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+reversed_fruits = []
+for i in range(len(fruits) - 1, -1, -1):
+    reversed_fruits.append(fruits[i])
+print(reversed_fruits)
+
+#3
+'okljklj'
