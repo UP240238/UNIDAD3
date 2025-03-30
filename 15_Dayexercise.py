@@ -1,5 +1,3 @@
-print('hola')
-#15
 #Exercise level1 
 #Sintax Error
 if x > 5
@@ -25,3 +23,5 @@ from math import funcion_inexistente
 #ValueError
 int("hola")
 
+#ZeroDivisionError
+resultado = 10 / 0
