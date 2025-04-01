@@ -37,6 +37,7 @@ for item in lista:
 
 
  #Exercises: Level 2
+ #1
 total=0
 
 for i in range(101): 
@@ -56,6 +57,7 @@ for i in range(101):
         print(par_sum)
         
         #Exercises: Level 3
+        #1
 
         countries = [
     'Afganistán', 'Albania', 'Argelia', 'Andorra', 'Angola', 'Antigua y Barbuda', 'Argentina', 'Armenia', 'Australia',
