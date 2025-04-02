@@ -42,6 +42,7 @@ del A
 del B
 del age
 #Exercise level 3 
+age= [22, 19, 24, 25, 26, 24, 25, 24]
 age_set=set(age)
 listlen=len(age)
 setlen=(age_set)
