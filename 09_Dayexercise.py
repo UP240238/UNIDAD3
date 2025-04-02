@@ -9,21 +9,18 @@ else:
     print(f"Te faltan {años_faltantes} años para poder aprender a conducir.")
 
     #2
-    # Pedir edades al usuario
 mi_edad = int(input("Ingresa tu edad: "))
-tu_edad = int(input("Ingresa la otra edad: "))  # Cambié el mensaje para evitar confusión
-
-# Comparar edades
+tu_edad = int(input("Ingresa la otra edad: "))  
 if mi_edad > tu_edad:
     diferencia = mi_edad - tu_edad
     if diferencia == 1:
-        print(f"Soy mayor que tú por {diferencia} año")  # Corregí "años" a "año" para singular
+        print(f"Soy mayor que tú por {diferencia} año")  
     else:
         print(f"Soy mayor que tú por {diferencia} años")
 elif tu_edad > mi_edad:
     diferencia = tu_edad - mi_edad
     if diferencia == 1:
-        print(f"Eres mayor que yo por {diferencia} año")  # Corregí "años" a "año" para singular
+        print(f"Eres mayor que yo por {diferencia} año")
     else:
         print(f"Eres mayor que yo por {diferencia} años")
 else:
