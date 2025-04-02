@@ -1,5 +1,5 @@
 #Exercise level 1
-#1 
+#1 Get user input using input(“Enter your age: ”). If user is 18 or older, give feedback: You are old enough to drive. If below 18 give feedback to wait for the missing amount of years. Output:
 edad = int(input("Ingresa tu edad: "))  
 
 if edad >= 18:
@@ -8,7 +8,7 @@ else:
     años_faltantes = 18 - edad
     print(f"Te faltan {años_faltantes} años para poder aprender a conducir.")
 
-    #2
+    #2 Compare the values of my_age and your_age using if … else. Who is older (me or you)? Use input(“Enter your age: ”) to get the age as input. You can use a nested condition to print 'year' for 1 year difference in age, 'years' for bigger differences, and a custom text if my_age = your_age. Output:
 mi_edad = int(input("Ingresa tu edad: "))
 tu_edad = int(input("Ingresa la otra edad: "))  
 if mi_edad > tu_edad:
@@ -27,8 +27,8 @@ else:
     print("Tenemos la misma edad")
 
 
-#3
-
+#3 Get two numbers from the user using input prompt. If a is greater than b return a is greater than b, if a is less b return a is smaller than b, else a is equal to b. Output:
+#1Write a code which gives grade to students according to theirs scores:
 a = float(input("Ingresa el primer número: "))
 b = float(input("Ingresa el segundo número: "))
 
@@ -39,7 +39,7 @@ elif a < b:
 else:
     print(f"{a} es igual a {b}.")
 
-#Exercise level 2 
+#Exercise level 2 Check if the season is Autumn, Winter, Spring or Summer. If the user input is: September, October or November, the season is Autumn. December, January or February, the season is Winter. March, April or May, the season is Spring June, July or August, the season is Summer
 def asignar_calificacion(puntaje):
     if 80 <= puntaje <= 100:
         return "A"
@@ -60,7 +60,7 @@ puntaje = float(input("Introduce el puntaje del estudiante: "))
 calificacion = asignar_calificacion(puntaje)
 print(f"La calificación del estudiante es: {calificacion}")
 
-#2
+#2The following list contains some fruits:
 def determinar_estacion(mes):
     mes = mes.lower()  
     if mes in ['septiembre', 'octubre', 'noviembre']:
@@ -79,7 +79,7 @@ mes = input("Introduce el mes: ")
 estacion = determinar_estacion(mes)
 print(f"La estación correspondiente es: {estacion}")
 
-#3
+#3The following list contains some fruits:
 frutas = ['banana', 'naranja', 'mango', 'sandia']
 
 def agregar_fruta(fruta):
@@ -107,7 +107,7 @@ persona = {
     }
 }
 
-# Tarea 1
+# Tarea 1Here we have a person dictionary. Feel free to modify it!
 if 'skills' in persona:
     lista_habilidades = persona['skills']
     habilidad_media = lista_habilidades[len(lista_habilidades) // 2]
