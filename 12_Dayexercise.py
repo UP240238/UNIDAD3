@@ -1,5 +1,5 @@
 #Exercises Level 1
-#1
+#1 Writ a function which generates a six digit/character random_user_id
 import random
 import string
 
@@ -10,7 +10,7 @@ def random_user_id():
 
 print(random_user_id())  
 
-#2
+#2 Modify the previous task. Declare a function named user_id_gen_by_user. It doesn’t take any parameters but it takes two inputs using input(). One of the inputs is the number of characters and the second input is the number of IDs which are supposed to be generated.
 import random
 import string
 
@@ -29,7 +29,7 @@ def user_id_gen_by_user():
     return '\n'.join(ids)
 
 print(user_id_gen_by_user())  
-#3
+#3 Write a function named rgb_color_gen. It will generate rgb colors (3 values ranging from 0 to 255 each).
 import random
 
 def rgb_color_gen():
@@ -40,7 +40,7 @@ def rgb_color_gen():
 print(rgb_color_gen())  
 
 #Exercises Level 2
-#1
+#1  Write a function list_of_hexa_colors which returns any number of hexadecimal colors in an array (six hexadecimal numbers written after #. Hexadecimal numeral system is made out of 16 symbols, 0-9 and first 6 letters of the alphabet, a-f. Check the task 6 for output examples).
 import random
 
 def list_of_hexa_colors(n):
@@ -51,7 +51,7 @@ def list_of_hexa_colors(n):
     return colores_hex
 
 print(list_of_hexa_colors(5))  
-#2
+#2 Write a function list_of_rgb_colors which returns any number of RGB colors in an array.
 import random
 
 def list_of_rgb_colors(n):
@@ -66,7 +66,7 @@ def list_of_rgb_colors(n):
 
 print(list_of_rgb_colors(5)) 
 
-#3
+#3Write a function generate_colors which can generate any number of hexa or rgb colors.
 import random
 
 def generate_colors(tipo, n):
@@ -87,7 +87,7 @@ print(generate_colors('hexa', 3))
 print(generate_colors('rgb', 1))  
 
 #Exercises Level 3
-#1
+#1 Call your function shuffle_list, it takes a list as a parameter and it returns a shuffled list
 import random
 
 def shuffle_list(lst):
@@ -96,7 +96,7 @@ def shuffle_list(lst):
 
 mi_lista = [1, 2, 3, 4, 5]
 print(shuffle_list(mi_lista))  
-#2
+#2 Write a function which returns an array of seven random numbers in a range of 0-9. All the numbers must be unique.
 import random
 
 def generar_numeros_unicos():
