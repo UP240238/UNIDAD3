@@ -1,49 +1,51 @@
 #Exercises: Level 1
-#1
+#1Iterate 0 to 10 using for loop, do the same using while loop.
+
+
 for i in range(11): 
     print(i)
 
-#2
+#2Iterate 10 to 0 using for loop, do the same using while loop.
 for i in range(10,-1,-1):
     print(i)
 
-#3
+#3Write a loop that makes seven calls to print(), so we get on the output the following triangle:
 for i in range(1, 8):  
     print('#' * i)
     
-    #4
+    #4 Use nested loops to create the following:
     for i in range(8):  
      for j in range(8):  
         print('#', end=' ')  
     print()
 
-    #5
+    #5 Print the following pattern:
     for i in range(11):  
      print(f"{i} x {i} = {i * i}")
 
-     #6
+     #6 Iterate through the list, ['Python', 'Numpy','Pandas','Django', 'Flask'] using a for loop and print out the items.
      lista = ['Python', 'Numpy', 'Pandas', 'Django', 'Flask']
 
 for item in lista:
     print(item)
 
-    #7
+    #7 Use for loop to iterate from 0 to 100 and print only even numbers
     for i in range(100,-1,-2):
      print(i)
 
-  #8
+  #8Use for loop to iterate from 0 to 100 and print only odd numbers
      for i in range(100,-1,-3):
       print(i)
 
 
  #Exercises: Level 2
- #1
+ #1Use for loop to iterate from 0 to 100 and print the sum of all numbers.
 total=0
 
 for i in range(101): 
     total +=   i
 print(total)
-#2
+#2Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
 par_sum = 0  
 imp_sum = 0   
 
@@ -57,7 +59,7 @@ for i in range(101):
         print(par_sum)
         
         #Exercises: Level 3
-        #1
+        #1Go to the data folder and use the countries.py file. Loop through the countries and extract all the countries containing the word land.
 
         countries = [
     'Afganistán', 'Albania', 'Argelia', 'Andorra', 'Angola', 'Antigua y Barbuda', 'Argentina', 'Armenia', 'Australia',
@@ -85,7 +87,8 @@ countries_with_land = [country for country in countries if 'land' in country.low
 
 print(countries_with_land)
 
-#2
+#2his is a fruit list, ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop.
+
 
 fruits = ['banana', 'orange', 'mango', 'lemon']
 reversed_fruits = []
