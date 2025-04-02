@@ -72,7 +72,7 @@ print(frutas)
 nueva_cadena = " - ".join(frutas)
 print(nueva_cadena)  # "manzana - pera - uva"
 
-#Número 1
+#Número 1 Concatenate the string 'Thirty', 'Days', 'Of', 'Python' to a single string, 'Thirty Days Of Python'.
 Parte1='Thirty'
 Parte2='Days'
 Parte3='Of'
@@ -80,29 +80,29 @@ Parte4='Python'
 Espacio=' '
 Frase=Parte1+Espacio+Parte2+Espacio+Parte3+Espacio+Parte4
 print(Frase)
-#Número2 
+#Número2  Concatenate the string 'Coding', 'For' , 'All' to a single string, 'Coding For All'.
 parte1='Coding'
 parte2='For'
 parte3='All'
 espacioo=' '
 frase=parte1+espacioo+parte2+espacioo+parte3
 print(frase)
-#Número3
+#Número3 Declare a variable named company and assign it to an initial value "Coding For All".
 company='Coding For All'
-#Número4 
+#Número4 Print the variable company using print().
 print(company)
-#Número 5
+#Número 5 Print the length of the company string using len() method and print().
 lenght_company=len(company)
 print(lenght_company)
-#Número 6
+#Número 6 Change all the characters to uppercase letters using upper() method.
 company = "Coding For All"
 companyupper = company.upper()
 print(companyupper)
-#Número7
+#Número7 Change all the characters to lowercase letters using lower() method.
 company = "Coding For All"
 companylower = company.lower()
 print(companylower)
-#Número8 
+#Número8 Use capitalize(), title(), swapcase() methods to format the value of the string Coding For All.
 company = "Coding For All"
 companycapitalize = company.capitalize()
 print(companycapitalize)
@@ -112,42 +112,42 @@ print(companytitle)
 company = "Coding For All"
 companyswapcase = company.swapcase()
 print(companyswapcase)
-#Número9 
+#Número9 Cut(slice) out the first word of Coding For All string.
 company = "Coding For All"
 words = company.split()  
 sliced_string = " ".join(words[1:])  
 print(sliced_string)
-#Número10
+#Número10 Check if Coding For All string contains a word Coding using the method index, find or other methods.
 company='Coding For All'
 sub_string='Coding'
 print(company.index(sub_string)) 
 print(company.index(sub_string, 0))
-#Número11
+#Número11 Replace the word coding in the string 'Coding For All' to Python.
 print(company.replace('Coding','Python'))
-#Número 12
+#Número 12 Change Python for Everyone to Python for All using the replace method or other methods.
 replaceword1=company.replace('Coding','Everyone')
 replaceword2=company.replace('All','Python')
 print(replaceword1)
 print(replaceword2)
-#Número13 
+#Número13 Split the string 'Coding For All' using space as the separator (split()) .
 company='Coding For All'
 print(company.split())
-#Número 14 
+#Número 14 "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" split the string at the comma.
 apps="Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
 print(apps.split(','))
-#Número 15 
+#Número 15  What is the character at index 0 in the string Coding For All.
 company='Coding For All'
 company0=company[0]
 print(company0)
-#Número 16 
+#Número 16  What is the last index of the string Coding For All.
 company='Coding For All'
 company0=company[13]
 print(company0)
-#Número17 
+#Número17  What character is at index 10 in "Coding For All" string.
 company='Coding For All'
 company0=company[10]
 print(company0)
-#Número 18
+#Número 18 Create an acronym or an abbreviation for the name 'Python For Everyone'.
 PY= 'Python For Everyone'
 print(PY.split())
 PY0=PY[0]
@@ -155,73 +155,73 @@ PY1=PY[7]
 PY2=PY[11]
 print(PY0,PY1,PY2)
 
-#Número 19 
+#Número 19 Create an acronym or an abbreviation for the name 'Coding For All'.
 CAF= 'Coding For All'
 print(CAF.split())
 CAF0=CAF[0]
 CAF1=CAF[7]
 CAF2=CAF[11]
 print(CAF0,CAF1,CAF2)
-#Número 20 
+#Número 20  Use index to determine the position of the first occurrence of C in Coding For All. 
 company='Coding For All'
 position=company.index('C')
 print(position)
-#Número 21 
+#Número 21 Use index to determine the position of the first occurrence of F in Coding For All.
 company='Coding For All People'
 find=company.rfind('l')
 print(find)
-#Número 22
+#Número 22  Use rfind to determine the position of the last occurrence of l in Coding For All People.
 company='Coding For All People'
 find=company.rfind('F')
 print(find)
-#Número 23 
+#Número 23 Use index or find to find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 word='You cannot end a sentence with because because because is a conjunction'
 inword=word.index('because')
 print(inword)
-#Número 24 
+#Número 24  Use rindex to find the position of the last occurrence of the word because in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 word='You cannot end a sentence with because because because is a conjunction'
 inword=word.rindex('because')
 print(inword)
-#Número 25 
+#Número 25 Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 word='You cannot end a sentence with because because because is a conjunction'
 print(word.replace('because', ''))
-#Número 26 
+#Número 26 Find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 word='You cannot end a sentence with because because because is a conjunction'
 inword=word.find('because')
 print(inword)
-#Número 27 
+#Número 27 Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 word='You cannot end a sentence with because because because is a conjunction'
 print(word.replace('because', ''))
-#Número 28 
+#Número 28 Does ''Coding For All' start with a substring Coding?
 company='Coding For All'
 print(company.startswith('Coding'))
-#Númerp 29 
+#Númerp 29 Does 'Coding For All' end with a substring coding?
 company='Coding For All'
 print(company.endswith('coding'))
-#Número30 
+#Número30 '   Coding For All      '  , remove the left and right trailing spaces in the given string.
 Company='   Coding For All      '  
 print(Company.strip(' '))
-#Número 31 
+#Número 31 Which one of the following variables return True when we use the method isidentifier():
 challenge = '30DaysOfPython'
 print(challenge.isidentifier())
 challenge = 'thirty_days_of_python'
 print(challenge.isidentifier()) 
-#Número 32 
+#Número 32 The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
 pythonlibraries=['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
 jpy=' '.join(pythonlibraries)
 print(jpy)
-#Número 33 
+#Número 33 Use the new line escape sequence to separate the following sentences
 text = "I am enjoying this challenge.\nI just wonder what is next"
 print(text)
-#Número 34 
+#Número 34 Use a tab escape sequence to write the following lines.
 text1='Name\tAge\tCountry\tCity\nAsabeneh\t250\tFinland\tHelsinki'
 print(text1)
-#Número 35 
+#Número 35 Use the string formatting method to display the following:
 radio = 10
 area = 3.14 * radio ** 2
 F='The area of a circle with radius {} is {} meters square.'.format(radio,area)
 print(F)
-#Número 36 
+#Número 36 Make the following using string formatting methods:
 a=8
 b=6
 suma=a+b
