@@ -1,11 +1,11 @@
 #Exercise level 1 
-#1
+#1Declare a function add_two_numbers. It takes two parameters and it returns a sum.
 def sumar_dos_numeros(a, b):
     return a + b
 
 print(sumar_dos_numeros(3, 5)) 
 
-#2
+#2Area of a circle is calculated as follows: area = π x r x r. Write a function that calculates area_of_circle. 
 import math
 
 def area_de_circulo(r):
@@ -13,7 +13,7 @@ def area_de_circulo(r):
 
 print(area_de_circulo(5))  
 
-#3
+#3Write a function called add_all_nums which takes arbitrary number of arguments and sums all the arguments. Check if all the list items are number types. If not do give a reasonable feedback.
 def sumar_todos_los_numeros(*args):
     if all(isinstance(arg, (int, float)) for arg in args):
         return sum(args)
@@ -23,13 +23,13 @@ def sumar_todos_los_numeros(*args):
 print(sumar_todos_los_numeros(1, 2, 3)) 
 print(sumar_todos_los_numeros(1, "dos", 3))  
 
-#4
+#4Temperature in °C can be converted to °F using this formula: °F = (°C x 9/5) + 32. Write a function which converts °C to °F, convert_celsius_to-fahrenheit.
 def convertir_celsius_a_fahrenheit(celsius):
     return (celsius * 9/5) + 32
 print(convertir_celsius_a_fahrenheit(25)) 
 
 
-#5
+#5 Write a function called check-season, it takes a month parameter and returns the season: Autumn, Winter, Spring or Summer.
 def verificar_estacion(mes):
     estaciones = {
         "Diciembre": "Invierno", "Enero": "Invierno", "Febrero": "Invierno",
@@ -41,7 +41,7 @@ def verificar_estacion(mes):
 
 print(verificar_estacion("Marzo"))  
 
-#6
+#6 Write a function called calculate_slope which return the slope of a linear equation
 def calcular_pendiente(m, x1, y1, x2, y2):
     if x2 - x1 == 0:
         return "La pendiente es indefinida (línea vertical)."
@@ -49,7 +49,7 @@ def calcular_pendiente(m, x1, y1, x2, y2):
 print(calcular_pendiente(2, 1, 2, 3, 4)) 
 
 
-#7
+#7 Quadratic equation is calculated as follows: ax² + bx + c = 0. Write a function which calculates
 import math
 
 def resolver_ecuacion_cuadratica(a, b, c):
@@ -66,13 +66,13 @@ def resolver_ecuacion_cuadratica(a, b, c):
 
 print(resolver_ecuacion_cuadratica(1, -3, 2))  
 
-#8
+#8 Declare a function named print_list. It takes a list as a parameter and it prints out each element of the list.
 def imprimir_lista(lst):
     for item in lst:
         print(item)
 
 imprimir_lista([1, 2, 3])
-#9
+#9 Declare a function named reverse_list. It takes an array as a parameter and it returns the reverse of the array (use loops).
 def invertir_lista(lst):
     lista_invertida = []
     for i in range(len(lst)-1, -1, -1):
@@ -81,18 +81,18 @@ def invertir_lista(lst):
 
 print(invertir_lista([1, 2, 3, 4, 5]))  
 
-#10
+#10 Declare a function named capitalize_list_items. It takes a list as a parameter and it returns a capitalized list of items
 def capitalizar_items_lista(lst):
     return [item.capitalize() for item in lst]
 
 print(capitalizar_items_lista(["manzana", "banana", "cereza"]))  
-#11
+#11 Declare a function named add_item. It takes a list and an item parameters. It returns a list with the item added at the end.
 def agregar_item(lst, item):
     lst.append(item)
     return lst
 alimentos = ['Papas', 'Tomates', 'Mangos', 'Leche']
 print(agregar_item(alimentos, 'Carne'))  
-#12
+#12 Declare a function named remove_item. It takes a list and an item parameters. It returns a list with the item removed from it.
 def eliminar_item(lst, item):
     if item in lst:
         lst.remove(item)
@@ -101,22 +101,22 @@ def eliminar_item(lst, item):
     return lst
 alimentos = ['Papas', 'Tomates', 'Mangos', 'Leche']
 print(eliminar_item(alimentos, 'Mangos'))  
-#13
+#13Declare a function named sum_of_numbers. It takes a number parameter and it adds all the numbers in that range.
 def suma_de_numeros(n):
     return sum(range(1, n + 1))
 print(suma_de_numeros(5)) 
 
-#14
+#14Declare a function named sum_of_odds. It takes a number parameter and it adds all the odd numbers in that range.
 def suma_de_impares(n):
     return sum(i for i in range(1, n + 1) if i % 2 != 0)
 print(suma_de_impares(5))
-#15 
+#15 Declare a function named sum_of_even. It takes a number parameter and it adds all the even numbers in that - range.
 def suma_de_pares(n):
     return sum(i for i in range(1, n + 1) if i % 2 == 0)
 print(suma_de_pares(5))
 
 #Exercise level 2 
-#1
+#1Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
 def evens_and_odds(n):
     pares = 0
     impares = 0
@@ -140,7 +140,7 @@ def factorial(n):
 
 print(factorial(5))  
 
-#2
+#2Call your function is_empty, it takes a parameter and it checks if it is empty or not
 def is_empty(valor):
     if not valor:  
         return True
@@ -148,7 +148,7 @@ def is_empty(valor):
 
 print(is_empty(""))  
 print(is_empty([1, 2, 3])) 
-
+#3Write different functions which take lists. They should calculate_mean, calculate_median, calculate_mode, calculate_range, calculate_variance, calculate_std (standard deviation).
 #Media
 def calcular_media(lista):
     return sum(lista) / len(lista) if len(lista) > 0 else 0
@@ -197,7 +197,7 @@ def calcular_desviacion_estandar(lista):
 print(calcular_desviacion_estandar([1, 2, 3, 4, 5]))  
 
 #Exercise level 3 
-#1
+#1Write a function called is_prime, which checks if a number is prime.
 def es_primo(n):
     if n <= 1:
         return False
@@ -209,20 +209,20 @@ def es_primo(n):
 print(es_primo(5))  
 print(es_primo(10))  
 
-#2
+#2Write a functions which checks if all items are unique in the list.
 def son_todos_unicos(lista):
     return len(lista) == len(set(lista))
 
 print(son_todos_unicos([1, 2, 3, 4, 5])) 
 print(son_todos_unicos([1, 2, 2, 4, 5]))  
-#3
+#3Write a function which checks if all the items of the list are of the same data type.
 def son_todos_del_mismo_tipo(lista):
     return len(set(type(x) for x in lista)) == 1
 
 print(son_todos_del_mismo_tipo([1, 2, 3, 4]))  
 print(son_todos_del_mismo_tipo([1, "2", 3])) 
 
-#4
+#4Write a function which check if provided variable is a valid python variable
 import keyword
 
 def es_variable_valida(var_nombre):
@@ -232,7 +232,7 @@ def es_variable_valida(var_nombre):
 print(es_variable_valida("mi_var")) 
 print(es_variable_valida("1var")) 
 print(es_variable_valida("def"))  
-#5
+#5Go to the data folder and access the countries-data.py file.
 import keyword
 
 def es_variable_valida(var_nombre):
